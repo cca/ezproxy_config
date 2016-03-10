@@ -1,0 +1,10 @@
+# for GALE DB
+# src: http://oclc.org/support/services/ezproxy/documentation/db/gale.en.html
+# updated 2014-08-04
+Title Gale Cengage Databases
+URL http://infotrac.galegroup.com/itweb/caliart
+HJ find.galegroup.com
+DJ galegroup.com
+DJ google.com
+DJ readspeaker.com
+NeverProxy library.demographicsnow.com
