@@ -1,3 +1,93 @@
+# **************************** Database Definitions *****************************************?
+
+
+##  The following databases require no authentication,
+##  but demonstrate EZproxy functionality, and can be used for testing.
+##  Remove as desired.
+
+T Worldcat.org
+U http://worldcat.org
+DJ worldcat.org
+
+T WhatIsMyIP
+U http://whatismyip.com
+DJ whatismyip.com
+
+#lynda.com re-added
+
+HTTPHeader X-Requested-With
+ProxyHostnameEdit ^lynda.com$ lyndacom
+ProxyHostnameEdit .lynda.com$ lyndacom
+
+Option NoHttpsHyphens
+
+Title Lynda.com
+URL http://iplogin.lynda.com
+Host iplogin.lynda.com
+DJ lynda.com
+
+NeverProxy cdn.lynda.com
+
+Option HttpsHyphens
+
+
+##  Many sites use dx.doi.org when linking from one database to another.
+##  This definition is recommended for all configurations.?
+##  See http://www.oclc.org/support/documentation/ezproxy/db/doi.htm for details
+
+Title -hide DOI System
+URL http://dx.doi.org
+Domain doi.org
+
+
+## **************************** OCLC Services *************************************************
+## Some OCLC services have been pre-configured with default settings below. remove the '#' from each line
+## associated with the desired service, and add additional options as desired
+
+## -----------------------------  OCLC FirstSearch ----------------------------------------------
+# T OCLC FirstSearch
+# U http://firstsearch.oclc.org/FSIP
+# DJ oclc.org
+
+## ---------------------------- Camio and Archive Grid ---------------------------------------------
+
+# T ArchiveGrid
+# U http://archivegrid.org
+# DJ archivegrid.org
+
+# T CAMIO
+# U http://camio.oclc.org
+# DJ camio.oclc.org
+
+## --------------------------- NetLibrary ---------------------------------------------------------
+## Netlibrary can be configured for Single Sign on (SSO) or standard IP recognition access.
+## Edit the appropriate stanza for your isntitution. See http://www.oclc.org/support/documentation/ezproxy/db/netlibrary.htm/ for details
+
+
+## -- Standard IP recognition --
+# Title NetLibrary
+# URL http://www.netlibrary.com/
+# Domain netlibrary.com
+
+## -- Single Sign On (SSO) --
+
+# Title NetLibrary
+# URL http://www.netlibrary.com/
+# NetLibrary [libraryid]
+
+## NOTE : Replace [libraryid] in the line above with the appropriate ID
+
+ExcludeIP 209.40.80.0 - 209.40.95.254
+ExcludeIP 10.16.0.0 - 10.32.254.254
+ExcludeIP 10.224.0.0 - 10.224.254.254
+ExcludeIP 10.225.0.0 - 10.225.254.254
+#ExcludeIP 173.13.173.77 - 173.13.173.78
+#ExcludeIP 173.11.100.117 - 173.11.100.118
+#ExcludeIP 173.11.81.253 - 173.11.81.254
+#ExcludeIP 173.11.98.221 - 173.11.98.222
+
+## ************************ USER DEFINED DATABASES *************************************************
+
 # for GALE DB
 # src: http://oclc.org/support/services/ezproxy/documentation/db/gale.en.html
 # updated 2014-08-04
@@ -8,3 +98,212 @@ DJ galegroup.com
 DJ google.com
 DJ readspeaker.com
 NeverProxy library.demographicsnow.com
+
+T OED Online
+URL http://www.oed.com
+DJ oed.com
+
+T Chicago Manual of Style
+Host login.chicagomanualofstyle.org
+U http://www.chicagomanualofstyle.org/
+HJ www.chicagomanualofstyle.org
+DJ www.chicagomanualofstyle.org
+DJ login.chicagomanualofstyle.org
+
+T Encyclopedia Britannica
+URL http://www.britannica.com
+D eb.com
+D britannica.com
+
+T Oxford Art Online
+URL http://www.oxfordartonline.com/
+D oxfordartonline.com
+
+T Material ConneXion
+URL http://library.materialconnexion.com/
+DJ materialconnexion.com
+
+Title The Chronicle of Higher Education
+URL http://chronicle.com
+Domain chronicle.com
+
+NeverProxy viewer.artstor.org
+AnonymousUrl +*.jar
+AnonymousUrl +*.gif
+AnonymousUrl +*.class
+AnonymousUrl +*.jpg
+Title ARTstor
+URL http://www.artstor.org
+Host library.artstor.org
+Host web2.artstor.org
+AnonymousURL -*
+
+Option DomainCookieOnly
+Title JSTOR
+URL http://www.jstor.org
+Domain jstor.org
+Option Cookie
+
+Title 360 Search
+URL http://ey7mr5fu9x.cs.serialssolutions.com
+HJ ey7mr5fu9x.cs.serialssolutions.com/
+
+HTTPHeader X-Requested-With
+T ProQuest
+U http://search.proquest.com/ip
+DJ proquest.com
+
+# fix certificate warnings with HTTPS hyphens option, 2015-10-13 (ep)
+# means domains are rewritten like https://search-ebscohost-com.proxy.cca.edu
+Option HttpsHyphens
+Title EBSCOhost
+URL http://search.ebscohost.com/login.aspx
+HJ http://search.ebscohost.com
+HJ ebsco.smartimagebase.com
+HJ eds.a.ebscohost.com
+HJ eds.b.ebscohost.com
+HJ eds.c.ebscohost.com
+HJ eds.d.ebscohost.com
+HJ eds.e.ebscohost.com
+HJ ehis.ebscohost.com
+HJ eoncontent.ebscohost.com
+HJ m.ebscohost.com
+HJ openurl.ebscohost.com
+HJ resolver.ebscohost.com
+HJ search.ebscohost.mobi
+HJ search.epnet.com
+HJ web.a.ebscohost.com
+HJ web.b.ebscohost.com
+HJ web.c.ebscohost.com
+HJ web.d.ebscohost.com
+HJ web.e.ebscohost.com
+HJ web.ebscohost.com
+HJ www.netlibrary.com
+DJ ebscohost.com
+DJ ebscohost.mobi
+DJ epnet.com
+DJ netlibrary.com
+DJ smartimagebase.com
+Find proxy.cfm?url=http://
+Replace proxy.cfm?url=http://^A
+Find /login?url=http://
+Replace /login?url=http://^A
+NeverProxy *.eoncontent.ebscohost.com
+NeverProxy content.ebscohost.com
+NeverProxy ebscovideos.ebscohost.com
+NeverProxy rps2images.ebscohost.com
+NeverProxy rpsimages.ebscohost.com
+NeverProxy epmedia.ebscohost.com
+NeverProxy imageserver.ebscohost.com
+NeverProxy *.footnotelibrary.com
+Option AllowSendGZip
+Option NoHttpsHyphens
+
+T Pronunciator
+U http://learning.pronunciator.com/getstarted.php?library_id=7959
+DJ pronunciator.com
+DJ learning.pronunciator.com
+HJ http://learning.pronunciator.com/getstarted.php?library_id=7959
+
+Title: ingentaconnect
+Domain: ingentaconnect.com
+Host:  www.ingentaconnect.com
+URL: www.ingentaconnect.com
+
+# INGENTAconnect
+# src: http://oclc.org/support/services/ezproxy/documentation/db/ingentaconnect.en.html
+# added 2014-08-04
+Title INGENTAconnect
+U http://www.ingenta.com/
+H www.ingenta.com
+H www.ingentaconnect.com
+DJ ingenta.com
+DJ ingentaconnect.com
+H openurl.ingenta.com
+H www.publishingtechnology.com
+DJ publishingtechnology.com
+
+#Lexis Nexis
+Option DomainCookieOnly
+Title LexisNexis
+URL http://www.lexisnexis.com/hottopics/lnacademic
+DJ lexis-nexis.com
+DJ lexisnexis.com
+DJ lexis.com
+DJ lexiscn.com
+DJ cispubs.com
+HJ web.lexis-nexis.com
+HJ web.lexisnexis.com
+HJ www.lexis-nexis.com
+HJ www.lexisnexis.com
+HJ www.lexis.com
+HJ www.lexiscn.com
+HJ w3.lexis.com
+Find location.hostname
+Replace location.host
+Find = "www.lexisnexis.com"
+Replace = "^pwww.lexisnexis.com^"
+Find &unix=http://
+Replace &unix=http://^A
+Find GetCookie("LNAUTH")
+Replace "LNAUTH-IP"
+Find NAME="_PRIORREFERER" VALUE="http://
+Replace NAME="_PRIORREFERER" VALUE="http://^A
+Find NAME="_PRIORREFERER" VALUE="https://
+Replace NAME="_PRIORREFERER" VALUE="https://^A
+Option Cookie
+
+#MIT Press Journals
+T MIT Press Journals
+U http://www.mitpressjournals.org
+HJ mitpressjournals.org
+DJ mitpressjournals.org
+
+#Duke GLQ Journal
+T GLQ A Journal of Lesbian and Gay Studies
+U http://glq.dukejournals.org
+HJ glq.dukejournals.org
+DJ dukejournals.org
+
+# sent in email from College Publishing support
+Option DomainCookieOnly
+T Journal of Green Building
+U http://www.journalofgreenbuilding.com
+D journalofgreenbuilding.com
+H 65.156.1.66
+Option Cookie
+
+# for Assessment Update journal
+# see https://www.oclc.org/support/services/ezproxy/documentation/db/wileyonlinelibrary.en.html
+HTTPHeader X-Requested-With
+Option X-Forwarded-For
+Cookie theproxy=ezproxy; domain=.onlinelibrary.wiley.com
+T Wiley Online
+U http://onlinelibrary.wiley.com
+HJ doi.wiley.com
+HJ www3.interscience.wiley.com
+HJ interscience.wiley.com
+HJ www.mrw.interscience.wiley.com
+HJ www.interscience.wiley.com
+HJ mrw.interscience.wiley.com
+HJ www.onlinelibrary.wiley.com
+HJ www.wiley.com
+DJ wiley.com
+HJ www.wileyopenaccess.com
+DJ wileyopenaccess.com
+Option NoX-Forwarded-For
+
+T Transgender Studies Quarterly (Duke Journals)
+U http://tsq.dukejournals.org
+HJ tsq.dukejournals.org
+HJ www.dukejournals.org
+DJ dukejournals.org
+
+HTTPHeader Access-Token
+ProxyHostnameEdit www.tandfonline.com$ www-tandfonline-com
+T Taylor & Francis
+U http://www.tandfonline.com
+HJ journalsonline.tandf.co.uk
+HJ tandfonline.com
+HJ www.journalsonline.tandf.co.uk
+DJ tandfonline.com
