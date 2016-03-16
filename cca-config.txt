@@ -1,5 +1,5 @@
-##**************************** Database Definitions *****************************************?
-#lynda.com re-added
+##**************************** Database Definitions *********************
+# lynda.com
 
 HTTPHeader X-Requested-With
 ProxyHostnameEdit ^lynda.com$ lyndacom
@@ -16,7 +16,6 @@ NeverProxy cdn.lynda.com
 
 Option HttpsHyphens
 
-
 ##  Many sites use dx.doi.org when linking from one database to another.
 ##  This definition is recommended for all configurations.?
 ##  See http://www.oclc.org/support/documentation/ezproxy/db/doi.htm for details
@@ -25,11 +24,8 @@ Title -hide DOI System
 URL http://dx.doi.org
 Domain doi.org
 
-## ************************ USER DEFINED DATABASES *************************************************
-
 # for GALE DB
-# src: http://oclc.org/support/services/ezproxy/documentation/db/gale.en.html
-# updated 2014-08-04
+# http://oclc.org/support/services/ezproxy/documentation/db/gale.en.html
 Title Gale Cengage Databases
 URL http://infotrac.galegroup.com/itweb/caliart
 HJ find.galegroup.com
@@ -128,10 +124,9 @@ T ProQuest
 U http://search.proquest.com/ip
 DJ proquest.com
 
-# fix certificate warnings with HTTPS hyphens option, 2015-10-13 (ep)
+# fix certificate warnings with HTTPS hyphens option
 # means domains are rewritten like https://search-ebscohost-com.proxy.cca.edu
 # https://www.oclc.org/support/services/ezproxy/documentation/db/ebscohost.en.html
-Option HttpsHyphens
 Title EBSCOhost
 URL https://search.ebscohost.com/login.aspx
 Host search.ebscohost.com
@@ -174,7 +169,6 @@ NeverProxy epmedia.ebscohost.com
 NeverProxy imageserver.ebscohost.com
 NeverProxy *.footnotelibrary.com
 Option AllowSendGZip
-Option NoHttpsHyphens
 
 T Pronunciator
 U http://learning.pronunciator.com/getstarted.php?library_id=7959
@@ -188,8 +182,7 @@ Host:  www.ingentaconnect.com
 URL: www.ingentaconnect.com
 
 # INGENTAconnect
-# src: http://oclc.org/support/services/ezproxy/documentation/db/ingentaconnect.en.html
-# added 2014-08-04
+# http://oclc.org/support/services/ezproxy/documentation/db/ingentaconnect.en.html
 Title INGENTAconnect
 U http://www.ingenta.com/
 H www.ingenta.com
@@ -200,7 +193,7 @@ H openurl.ingenta.com
 H www.publishingtechnology.com
 DJ publishingtechnology.com
 
-#Lexis Nexis
+# Lexis Nexis
 Option DomainCookieOnly
 Title LexisNexis
 URL http://www.lexisnexis.com/hottopics/lnacademic
@@ -230,13 +223,13 @@ Find NAME="_PRIORREFERER" VALUE="https://
 Replace NAME="_PRIORREFERER" VALUE="https://^A
 Option Cookie
 
-#MIT Press Journals
+# MIT Press Journals
 T MIT Press Journals
 U http://www.mitpressjournals.org
 HJ mitpressjournals.org
 DJ mitpressjournals.org
 
-#Duke GLQ Journal
+# Duke GLQ Journal
 T GLQ A Journal of Lesbian and Gay Studies
 U http://glq.dukejournals.org
 HJ glq.dukejournals.org
@@ -251,7 +244,7 @@ H 65.156.1.66
 Option Cookie
 
 # for Assessment Update journal
-# see https://www.oclc.org/support/services/ezproxy/documentation/db/wileyonlinelibrary.en.html
+# https://www.oclc.org/support/services/ezproxy/documentation/db/wileyonlinelibrary.en.html
 HTTPHeader X-Requested-With
 Option X-Forwarded-For
 Cookie theproxy=ezproxy; domain=.onlinelibrary.wiley.com
