@@ -130,10 +130,12 @@ DJ proquest.com
 
 # fix certificate warnings with HTTPS hyphens option, 2015-10-13 (ep)
 # means domains are rewritten like https://search-ebscohost-com.proxy.cca.edu
+# https://www.oclc.org/support/services/ezproxy/documentation/db/ebscohost.en.html
 Option HttpsHyphens
 Title EBSCOhost
-URL http://search.ebscohost.com/login.aspx
-HJ http://search.ebscohost.com
+URL https://search.ebscohost.com/login.aspx
+Host search.ebscohost.com
+HJ search.ebscohost.com
 HJ ebsco.smartimagebase.com
 HJ eds.a.ebscohost.com
 HJ eds.b.ebscohost.com
