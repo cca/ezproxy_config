@@ -1,18 +1,4 @@
 ##**************************** Database Definitions *****************************************?
-
-
-##  The following databases require no authentication,
-##  but demonstrate EZproxy functionality, and can be used for testing.
-##  Remove as desired.
-
-T Worldcat.org
-U http://worldcat.org
-DJ worldcat.org
-
-T WhatIsMyIP
-U http://whatismyip.com
-DJ whatismyip.com
-
 #lynda.com re-added
 
 HTTPHeader X-Requested-With
