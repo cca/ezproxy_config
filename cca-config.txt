@@ -39,43 +39,7 @@ Title -hide DOI System
 URL http://dx.doi.org
 Domain doi.org
 
-
-## **************************** OCLC Services *************************************************
-## Some OCLC services have been pre-configured with default settings below. remove the '#' from each line
-## associated with the desired service, and add additional options as desired
-
-## -----------------------------  OCLC FirstSearch ----------------------------------------------
-# T OCLC FirstSearch
-# U http://firstsearch.oclc.org/FSIP
-# DJ oclc.org
-
-## ---------------------------- Camio and Archive Grid ---------------------------------------------
-
-# T ArchiveGrid
-# U http://archivegrid.org
-# DJ archivegrid.org
-
-# T CAMIO
-# U http://camio.oclc.org
-# DJ camio.oclc.org
-
-## --------------------------- NetLibrary ---------------------------------------------------------
-## Netlibrary can be configured for Single Sign on (SSO) or standard IP recognition access.
-## Edit the appropriate stanza for your isntitution. See http://www.oclc.org/support/documentation/ezproxy/db/netlibrary.htm/ for details
-
-
-## -- Standard IP recognition --
-# Title NetLibrary
-# URL http://www.netlibrary.com/
-# Domain netlibrary.com
-
-## -- Single Sign On (SSO) --
-
-# Title NetLibrary
-# URL http://www.netlibrary.com/
-# NetLibrary [libraryid]
-
-## NOTE : Replace [libraryid] in the line above with the appropriate ID
+## ******************* CCA IP Ranges, exclude from proxy ****************
 
 ExcludeIP 209.40.80.0 - 209.40.95.254
 ExcludeIP 10.16.0.0 - 10.32.254.254
