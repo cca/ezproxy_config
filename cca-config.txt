@@ -98,10 +98,6 @@ URL http://www.jstor.org
 Domain jstor.org
 Option Cookie
 
-Title 360 Search
-URL http://ey7mr5fu9x.cs.serialssolutions.com
-HJ ey7mr5fu9x.cs.serialssolutions.com/
-
 HTTPHeader X-Requested-With
 T ProQuest
 U http://search.proquest.com/ip
