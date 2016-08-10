@@ -108,8 +108,7 @@ DJ proquest.com
 # https://www.oclc.org/support/services/ezproxy/documentation/db/ebscohost.en.html
 Title EBSCOhost
 URL https://search.ebscohost.com/login.aspx
-Host search.ebscohost.com
-HJ search.ebscohost.com
+HJ https://search.ebscohost.com
 HJ ebsco.smartimagebase.com
 HJ eds.a.ebscohost.com
 HJ eds.b.ebscohost.com
@@ -146,6 +145,7 @@ NeverProxy rps2images.ebscohost.com
 NeverProxy rpsimages.ebscohost.com
 NeverProxy epmedia.ebscohost.com
 NeverProxy imageserver.ebscohost.com
+NeverProxy *.ebsco-content.com
 NeverProxy *.footnotelibrary.com
 Option AllowSendGZip
 
