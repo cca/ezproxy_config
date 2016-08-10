@@ -74,8 +74,8 @@ URL http://www.oxfordartonline.com/
 D oxfordartonline.com
 
 T Material ConneXion
-URL http://library.materialconnexion.com/
-DJ materialconnexion.com
+URL https://www.materialconnexion.com/database/
+DomainJavaScript materialconnexion.com
 
 Title The Chronicle of Higher Education
 URL http://chronicle.com
