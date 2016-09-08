@@ -17,6 +17,13 @@ DJ google.com
 DJ readspeaker.com
 NeverProxy library.demographicsnow.com
 
+# https://www.oclc.org/support/services/ezproxy/documentation/db/oxfordreference.en.html
+Title Oxford Reference
+URL http://www.oxfordreference.com
+HJ www.oxfordreference.com
+HJ oxfordreference.com
+DJ oxfordreference.com
+
 T OED Online
 URL http://www.oed.com
 DJ oed.com
