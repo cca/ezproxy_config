@@ -24,7 +24,7 @@ HJ www.oxfordreference.com
 HJ oxfordreference.com
 DJ oxfordreference.com
 
-T OED Online
+Title Oxford English Dictionary
 URL http://www.oed.com
 DJ oed.com
 
