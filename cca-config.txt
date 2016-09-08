@@ -3,37 +3,23 @@
 ##  This definition is recommended for all configurations.?
 ##  See http://www.oclc.org/support/documentation/ezproxy/db/doi.htm for details
 
+# not shown on menu
 Title -hide DOI System
 URL http://dx.doi.org
 Domain doi.org
 
-# for GALE DB
-# http://oclc.org/support/services/ezproxy/documentation/db/gale.en.html
-Title Gale Cengage Databases
-URL http://infotrac.galegroup.com/itweb/caliart
-HJ find.galegroup.com
-DJ galegroup.com
-DJ google.com
-DJ readspeaker.com
-NeverProxy library.demographicsnow.com
+# begin alphabetical list of subscription databases
 
-# https://www.oclc.org/support/services/ezproxy/documentation/db/oxfordreference.en.html
-Title Oxford Reference
-URL http://www.oxfordreference.com
-HJ www.oxfordreference.com
-HJ oxfordreference.com
-DJ oxfordreference.com
-
-Title Oxford English Dictionary
-URL http://www.oed.com
-DJ oed.com
-
-T Chicago Manual of Style
-Host login.chicagomanualofstyle.org
-U http://www.chicagomanualofstyle.org/
-HJ www.chicagomanualofstyle.org
-DJ www.chicagomanualofstyle.org
-DJ login.chicagomanualofstyle.org
+NeverProxy viewer.artstor.org
+AnonymousUrl +*.jar
+AnonymousUrl +*.gif
+AnonymousUrl +*.class
+AnonymousUrl +*.jpg
+Title ARTstor
+URL http://www.artstor.org
+Host library.artstor.org
+Host web2.artstor.org
+AnonymousURL -*
 
 # https://www.oclc.org/support/services/ezproxy/documentation/db/encycbritannica.en.html
 Title Britannica - Academic
@@ -76,39 +62,16 @@ NeverProxy media-2.web.britannica.com
 NeverProxy media-3.web.britannica.com
 NeverProxy atlas.eb.com
 
-T Oxford Art Online
-URL http://www.oxfordartonline.com/
-D oxfordartonline.com
+T Chicago Manual of Style
+Host login.chicagomanualofstyle.org
+U http://www.chicagomanualofstyle.org/
+HJ www.chicagomanualofstyle.org
+DJ www.chicagomanualofstyle.org
+DJ login.chicagomanualofstyle.org
 
-T Material ConneXion
-URL http://library.materialconnexion.com/
-DomainJavaScript materialconnexion.com
-
-Title The Chronicle of Higher Education
+Title Chronicle of Higher Education
 URL http://chronicle.com
 Domain chronicle.com
-
-NeverProxy viewer.artstor.org
-AnonymousUrl +*.jar
-AnonymousUrl +*.gif
-AnonymousUrl +*.class
-AnonymousUrl +*.jpg
-Title ARTstor
-URL http://www.artstor.org
-Host library.artstor.org
-Host web2.artstor.org
-AnonymousURL -*
-
-Option DomainCookieOnly
-Title JSTOR
-URL http://www.jstor.org
-Domain jstor.org
-Option Cookie
-
-HTTPHeader X-Requested-With
-T ProQuest
-U http://search.proquest.com/ip
-DJ proquest.com
 
 # fix certificate warnings with HTTPS hyphens option
 # means domains are rewritten like https://search-ebscohost-com.proxy.cca.edu
@@ -156,16 +119,21 @@ NeverProxy *.ebsco-content.com
 NeverProxy *.footnotelibrary.com
 Option AllowSendGZip
 
-T Pronunciator
-U http://learning.pronunciator.com/getstarted.php?library_id=7959
-DJ pronunciator.com
-DJ learning.pronunciator.com
-HJ http://learning.pronunciator.com/getstarted.php?library_id=7959
+# for GALE DB
+# http://oclc.org/support/services/ezproxy/documentation/db/gale.en.html
+Title Gale Cengage Databases
+URL http://infotrac.galegroup.com/itweb/caliart
+HJ find.galegroup.com
+DJ galegroup.com
+DJ google.com
+DJ readspeaker.com
+NeverProxy library.demographicsnow.com
 
-Title: ingentaconnect
-Domain: ingentaconnect.com
-Host:  www.ingentaconnect.com
-URL: www.ingentaconnect.com
+# Duke GLQ Journal
+Title GLQ A Journal of Lesbian and Gay Studies
+U http://glq.dukejournals.org
+HJ glq.dukejournals.org
+DJ dukejournals.org
 
 # INGENTAconnect
 # http://oclc.org/support/services/ezproxy/documentation/db/ingentaconnect.en.html
@@ -178,6 +146,20 @@ DJ ingentaconnect.com
 H openurl.ingenta.com
 H www.publishingtechnology.com
 DJ publishingtechnology.com
+
+# sent in email from College Publishing support
+Option DomainCookieOnly
+Title Journal of Green Building
+U http://www.journalofgreenbuilding.com
+D journalofgreenbuilding.com
+H 65.156.1.66
+Option Cookie
+
+Option DomainCookieOnly
+Title JSTOR
+URL http://www.jstor.org
+Domain jstor.org
+Option Cookie
 
 # Lexis Nexis
 Option DomainCookieOnly
@@ -209,32 +191,63 @@ Find NAME="_PRIORREFERER" VALUE="https://
 Replace NAME="_PRIORREFERER" VALUE="https://^A
 Option Cookie
 
+Title Material ConneXion
+URL http://library.materialconnexion.com/
+DomainJavaScript materialconnexion.com
+
 # MIT Press Journals
-T MIT Press Journals
+Title MIT Press Journals
 U http://www.mitpressjournals.org
 HJ mitpressjournals.org
 DJ mitpressjournals.org
 
-# Duke GLQ Journal
-T GLQ A Journal of Lesbian and Gay Studies
-U http://glq.dukejournals.org
-HJ glq.dukejournals.org
-DJ dukejournals.org
+T Oxford Art Online
+URL http://www.oxfordartonline.com/
+D oxfordartonline.com
 
-# sent in email from College Publishing support
-Option DomainCookieOnly
-T Journal of Green Building
-U http://www.journalofgreenbuilding.com
-D journalofgreenbuilding.com
-H 65.156.1.66
-Option Cookie
+Title Oxford English Dictionary
+URL http://www.oed.com
+DJ oed.com
+
+# https://www.oclc.org/support/services/ezproxy/documentation/db/oxfordreference.en.html
+Title Oxford Reference
+URL http://www.oxfordreference.com
+HJ www.oxfordreference.com
+HJ oxfordreference.com
+DJ oxfordreference.com
+
+T Pronunciator
+U http://learning.pronunciator.com/getstarted.php?library_id=7959
+DJ pronunciator.com
+DJ learning.pronunciator.com
+HJ http://learning.pronunciator.com/getstarted.php?library_id=7959
+
+HTTPHeader X-Requested-With
+T ProQuest
+U http://search.proquest.com/ip
+DJ proquest.com
+
+HTTPHeader Access-Token
+ProxyHostnameEdit www.tandfonline.com$ www-tandfonline-com
+Title Taylor & Francis
+U http://www.tandfonline.com
+HJ journalsonline.tandf.co.uk
+HJ tandfonline.com
+HJ www.journalsonline.tandf.co.uk
+DJ tandfonline.com
+
+Title Transgender Studies Quarterly (Duke Journals)
+U http://tsq.dukejournals.org
+HJ tsq.dukejournals.org
+HJ www.dukejournals.org
+DJ dukejournals.org
 
 # for Assessment Update journal
 # https://www.oclc.org/support/services/ezproxy/documentation/db/wileyonlinelibrary.en.html
 HTTPHeader X-Requested-With
 Option X-Forwarded-For
 Cookie theproxy=ezproxy; domain=.onlinelibrary.wiley.com
-T Wiley Online
+Title Wiley Online
 U http://onlinelibrary.wiley.com
 HJ doi.wiley.com
 HJ www3.interscience.wiley.com
@@ -248,18 +261,3 @@ DJ wiley.com
 HJ www.wileyopenaccess.com
 DJ wileyopenaccess.com
 Option NoX-Forwarded-For
-
-T Transgender Studies Quarterly (Duke Journals)
-U http://tsq.dukejournals.org
-HJ tsq.dukejournals.org
-HJ www.dukejournals.org
-DJ dukejournals.org
-
-HTTPHeader Access-Token
-ProxyHostnameEdit www.tandfonline.com$ www-tandfonline-com
-T Taylor & Francis
-U http://www.tandfonline.com
-HJ journalsonline.tandf.co.uk
-HJ tandfonline.com
-HJ www.journalsonline.tandf.co.uk
-DJ tandfonline.com
