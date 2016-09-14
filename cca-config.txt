@@ -227,6 +227,12 @@ T ProQuest
 U http://search.proquest.com/ip
 DJ proquest.com
 
+# ProQuest Summon discovery layer
+# http://knowledge.exlibrisgroup.com/Summon/Product_Documentation/Overview_of_The_Summon_Service/The_Summon_Administration_Console/Summon%3A_Web-Based_Proxy_Support
+T Summon
+U https://cca.summon.serialssolutions.com
+DJ summon.serialssolutions.com
+
 HTTPHeader Access-Token
 ProxyHostnameEdit www.tandfonline.com$ www-tandfonline-com
 Title Taylor & Francis
