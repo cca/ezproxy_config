@@ -232,6 +232,8 @@ DJ proquest.com
 T Summon
 U https://cca.summon.serialssolutions.com
 DJ summon.serialssolutions.com
+# fix logo images not appearing when signed in via ezproxy
+NeverProxy assets.summon.serialssolutions.com
 
 HTTPHeader Access-Token
 ProxyHostnameEdit www.tandfonline.com$ www-tandfonline-com
