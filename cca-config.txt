@@ -227,8 +227,12 @@ Find NAME="_PRIORREFERER" VALUE="https://
 Replace NAME="_PRIORREFERER" VALUE="https://^A
 Option Cookie
 
-Title Material ConneXion
+Title Material ConneXion (old version)
 URL http://library.materialconnexion.com/
+DomainJavaScript materialconnexion.com
+# new version of Material ConneXion (May 2017)
+Title Material ConneXion (new database)
+URL https://www.materialconnexion.com/database
 DomainJavaScript materialconnexion.com
 
 # MIT Press Journals
