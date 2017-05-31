@@ -261,7 +261,7 @@ HJ http://learning.pronunciator.com/getstarted.php?library_id=7959
 
 HTTPHeader X-Requested-With
 T ProQuest
-U http://search.proquest.com/ip
+U https://search.proquest.com/ip
 DJ proquest.com
 
 # ProQuest Summon discovery layer
