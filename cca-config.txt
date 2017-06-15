@@ -197,6 +197,13 @@ URL http://www.jstor.org
 Domain jstor.org
 Option Cookie
 
+# https://www.oclc.org/support/services/ezproxy/documentation/db/kanopy.en.html
+Title Kanopy Videostreaming
+URL http://cca.kanopystreaming.com
+HJ https://cca.kanopystreaming.com
+HJ cca.kanopystreaming.com
+DJ kanopystreaming.com
+
 # Lexis Nexis
 Option DomainCookieOnly
 Title LexisNexis
