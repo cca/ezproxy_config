@@ -73,6 +73,16 @@ Title Chronicle of Higher Education
 URL http://chronicle.com
 Domain chronicle.com
 
+Title Duke University Press (new)
+URL https://read.dukeupress.edu
+HJ read.dukeupress.edu
+HJ reader.dukeupress.edu
+HJ www.dukeupress.edu
+HJ https://reader.dukeupress.edu
+HJ https://www.dukeupress.edu
+DJ dukeupress.edu
+The reader lines should
+
 # fix certificate warnings with HTTPS hyphens option
 # means domains are rewritten like https://search-ebscohost-com.proxy.cca.edu
 # https://www.oclc.org/support/services/ezproxy/documentation/db/ebscohost.en.html
