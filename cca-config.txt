@@ -73,7 +73,7 @@ Title Chronicle of Higher Education
 URL http://chronicle.com
 Domain chronicle.com
 
-Title Duke University Press (new)
+Title Duke University Press
 HTTPHeader -request X-Tizra- Ajax
 URL https://read.dukeupress.edu
 HJ read.dukeupress.edu
@@ -174,12 +174,6 @@ DJ chiltonlibrary.com
 DJ ggimg.com
 NeverProxy library.demographicsnow.com
 NeverProxy apis.google.com
-
-# Duke GLQ Journal
-Title GLQ A Journal of Lesbian and Gay Studies
-U http://glq.dukejournals.org
-HJ glq.dukejournals.org
-DJ dukejournals.org
 
 # INGENTAconnect
 # http://oclc.org/support/services/ezproxy/documentation/db/ingentaconnect.en.html
@@ -359,12 +353,6 @@ HJ journalsonline.tandf.co.uk
 HJ tandfonline.com
 HJ www.journalsonline.tandf.co.uk
 DJ tandfonline.com
-
-Title Transgender Studies Quarterly (Duke Journals)
-U http://tsq.dukejournals.org
-HJ tsq.dukejournals.org
-HJ www.dukejournals.org
-DJ dukejournals.org
 
 # for Assessment Update journal
 # https://www.oclc.org/support/services/ezproxy/documentation/db/wileyonlinelibrary.en.html
