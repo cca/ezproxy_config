@@ -21,6 +21,23 @@ Host library.artstor.org
 Host web2.artstor.org
 AnonymousURL -*
 
+# this is required for Bloomsbury
+GEOPlugin
+Title GEOPlugin
+URL https://ssl.geoplugin.net
+Host https://ssl.geoplugin.net
+HJ ssl.geoplugin.net
+DJ geoplugin.net
+
+# https://www.oclc.org/support/services/ezproxy/documentation/db/bloomsbury.en.html
+Title Bloomsbury Design Library
+URL https://www.bloomsburydesignlibrary.com/
+HJ www.bloomsburydesignlibrary.com
+HJ bloomsburydesignlibrary.com
+HJ https://www.bloomsburydesignlibrary.com
+HJ https://bloomsburydesignlibrary.com
+DJ bloomsburydesignlibrary.com
+
 # https://www.oclc.org/support/services/ezproxy/documentation/db/encycbritannica.en.html
 Title Britannica - Academic
 URL http://academic.eb.com
