@@ -304,8 +304,6 @@ Option Cookie
 
 # new version of Material ConneXion (April 2018)
 Title Material ConneXion
-URL https://www.materialconnexion.com/database
-DomainJavaScript materialconnexion.com
 U http://materialconnexion.online
 HJ www.materialconnexion.online
 DJ materialconnexion.online
@@ -360,7 +358,7 @@ DJ summon.serialssolutions.com
 # fix logo images not appearing when signed in via ezproxy
 NeverProxy assets.summon.serialssolutions.com
 # the pre-production test instance for upgrades
-T Summon (Preprod)
+T -hide Summon (Preprod)
 U cca.preprod.summon.serialssolutions.com
 DJ summon.serialssolutions.com
 NeverProxy assets.summon.serialssolutions.com
