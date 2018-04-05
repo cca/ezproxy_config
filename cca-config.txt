@@ -302,10 +302,13 @@ Find NAME="_PRIORREFERER" VALUE="https://
 Replace NAME="_PRIORREFERER" VALUE="https://^A
 Option Cookie
 
-# new version of Material ConneXion (May 2017)
+# new version of Material ConneXion (April 2018)
 Title Material ConneXion
 URL https://www.materialconnexion.com/database
 DomainJavaScript materialconnexion.com
+U http://materialconnexion.online
+HJ www.materialconnexion.online
+DJ materialconnexion.online
 
 # MIT Press Journals
 Title MIT Press Journals
