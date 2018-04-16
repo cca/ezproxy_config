@@ -219,11 +219,15 @@ Domain jstor.org
 Option Cookie
 
 # https://www.oclc.org/support/services/ezproxy/documentation/db/kanopy.en.html
-Title Kanopy Videostreaming
-URL http://cca.kanopystreaming.com
-HJ https://cca.kanopystreaming.com
-HJ cca.kanopystreaming.com
-DJ kanopystreaming.com
+T Kanopy Streaming
+U http://cca.kanopystreaming.com
+H https://cca.kanopystreaming.com
+D kanopystreaming.com
+
+T Kanopy
+U http://cca.kanopy.com
+H https://cca.kanopy.com
+D kanopy.com
 
 # Lexis Uni
 # https://www.oclc.org/support/services/ezproxy/documentation/db/nexis-uni.en.html
