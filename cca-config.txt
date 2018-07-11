@@ -308,7 +308,7 @@ Option Cookie
 
 # new version of Material ConneXion (April 2018)
 Title Material ConneXion
-U http://materialconnexion.online
+U https://www.materialconnexion.online/database
 HJ www.materialconnexion.online
 DJ materialconnexion.online
 
