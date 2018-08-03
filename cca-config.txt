@@ -149,7 +149,7 @@ Option AllowSendGZip
 # for Literature Resource Center
 # http://oclc.org/support/services/ezproxy/documentation/db/gale.en.html
 Title Gale Databases
-URL http://infotrac.galegroup.com/itweb/caliart
+URL http://go.galegroup.com/ps/start.do?p=LitRC&u=caliart
 HJ access.gale.com
 HJ www.galenet.com
 HJ bi.galegroup.com
