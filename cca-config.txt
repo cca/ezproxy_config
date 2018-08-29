@@ -87,17 +87,16 @@ DJ www.chicagomanualofstyle.org
 DJ login.chicagomanualofstyle.org
 
 Title The Chronicle of Higher Education
-URL https://www.chronicle.com
-HJ chronicle.com
-HJ data.chronicle.com
-HJ projects.chronicle.com
-HJ www.chronicle.com
-HJ https://chronicle.com
-HJ https://data.chronicle.com
-HJ https://projects.chronicle.com
-HJ https://www.chronicle.com
+MimeFilter application/json .* javascript
+URL http://www.chronicle.com
+NeverProxy thechronicleofhighereducation.disqus.com
+NeverProxy disqus.com
+NeverProxy mediacdn.disqus.com
 DJ chronicle.com
-NeverProxy hive.chronicle.com
+HJ chronicle.com
+HJ www.chronicle.com
+Find http:\/\/
+Replace http://
 
 Title Duke University Press
 HTTPHeader -request X-Tizra- Ajax
