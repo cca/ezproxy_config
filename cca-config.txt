@@ -3,6 +3,12 @@
 ##  This definition is recommended for all configurations.?
 ##  See http://www.oclc.org/support/documentation/ezproxy/db/doi.htm for details
 
+# https://help.oclc.org/Library_Management/EZproxy/Configure_resources/Option_HttpsHyphens
+# rewrite links to http://some-db-com.proxy.cca.edu (periods turned to hyphens)
+# so the wildcard *.proxy.cca.edu cert covers them all
+Option HttpsHyphens
+
+
 # not shown on menu
 Title -hide DOI System
 URL http://dx.doi.org
