@@ -16,16 +16,23 @@ Domain doi.org
 
 # begin alphabetical list of subscription databases
 
+# https://help.oclc.org/Library_Management/EZproxy/Database_stanzas/Artstor
+HTTPMethod PUT
+HTTPMethod PATCH
+HTTPMethod HEAD
+HTTPMethod OPTIONS
+HTTPMethod DELETE
+Title Artstor (updated 20180815)
+HTTPHeader -request -process Accept-Encoding
+URL https://library.artstor.org
+DJ artstor.org
+HJ mdxdv.artstor.org
+HJ library.artstor.org
+HJ http://library.artstor.org
+HJ proxy.library.artstor.org
 NeverProxy viewer.artstor.org
-AnonymousUrl +*.jar
-AnonymousUrl +*.gif
-AnonymousUrl +*.class
-AnonymousUrl +*.jpg
-Title ARTstor
-URL http://www.artstor.org
-Host library.artstor.org
-Host web2.artstor.org
-AnonymousURL -*
+NeverProxy viewer2.artstor.org
+NeverProxy stor.artstor.org
 
 # this is required for Bloomsbury
 GEOPlugin
