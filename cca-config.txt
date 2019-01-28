@@ -22,7 +22,7 @@ HTTPMethod PATCH
 HTTPMethod HEAD
 HTTPMethod OPTIONS
 HTTPMethod DELETE
-Title Artstor (updated 20180815)
+Title Artstor
 HTTPHeader -request -process Accept-Encoding
 URL https://library.artstor.org
 DJ artstor.org
@@ -130,7 +130,7 @@ HJ https://linksource.ebsco.com
 Option Cookie
 #
 AnonymousURL https://ppws.ebsco-content.com/*
-Title EBSCOhost (updated 20180613)
+Title EBSCOhost
 HTTPHeader -request -process userIdentifier
 HTTPHeader -request -process Authorization
 URL http://search.ebscohost.com/login.aspx
