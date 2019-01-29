@@ -35,7 +35,6 @@ NeverProxy viewer2.artstor.org
 NeverProxy stor.artstor.org
 
 # this is required for Bloomsbury
-GEOPlugin
 Title GEOPlugin
 URL https://ssl.geoplugin.net
 Host https://ssl.geoplugin.net
@@ -111,8 +110,9 @@ HJ www.chronicle.com
 Find http:\/\/
 Replace http://
 
+HTTPHeader X-Requested-With
+HTTPHeader X-Tizra-Ajax
 Title Duke University Press
-HTTPHeader -request X-Tizra- Ajax
 URL https://read.dukeupress.edu
 HJ read.dukeupress.edu
 HJ reader.dukeupress.edu
