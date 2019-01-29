@@ -35,7 +35,7 @@ NeverProxy viewer2.artstor.org
 NeverProxy stor.artstor.org
 
 # this is required for Bloomsbury
-Title GEOPlugin
+Title -Hide GEOPlugin
 URL https://ssl.geoplugin.net
 Host https://ssl.geoplugin.net
 HJ ssl.geoplugin.net
